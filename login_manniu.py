@@ -37,4 +37,5 @@ driver.find_element_by_class_name("login_button").click()   #定位到登陆框
 driver.implicitly_wait(15)
 driver.find_element_by_class_name("i_fx_checkin_b_wei").click()
 
-
+driver.implicitly_wait(5)
+driver.quit()
