@@ -34,8 +34,12 @@ driver.find_element_by_class_name("login_button").click()   #定位到登陆框
 #driver.find_elements_by_xpath("//*[@id='login_button']").click()
 #//*[@id="login_button"]
 
-driver.implicitly_wait(30)
+driver.implicitly_wait(60)
+print("wait 60")
+time.sleep(20)
+print("sleep 10")
+
 driver.find_element_by_class_name("i_fx_checkin_b_wei").click()
 
-driver.implicitly_wait(30)
+time.sleep(10)
 driver.quit()
